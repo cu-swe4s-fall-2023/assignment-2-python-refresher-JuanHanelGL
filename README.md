@@ -8,3 +8,5 @@ Modified the get_column function in the my_utils.py file. It now stores the valu
 
 Added a for loop to add all the values in fires and printed it on screen. 
 
+Added shell script run.sh to run print_fires.py.
+
