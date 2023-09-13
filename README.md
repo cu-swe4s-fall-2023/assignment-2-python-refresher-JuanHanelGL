@@ -6,3 +6,5 @@ Added a default value of 1 to the result_column variable in the get_column() fun
 
 Modified the get_column function in the my_utils.py file. It now stores the values of the result column when a column of interest equals a wanted value.
 
+Added a for loop to add all the values in fires and printed it on screen. 
+
