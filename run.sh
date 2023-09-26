@@ -9,7 +9,9 @@ set -o pipefail # fail if any prior step failed
 python print_fires.py --country "United States of America" --country_column 0 --fires_column 4 --file_name "Agrofood_co2_emission.csv"
 
 #This does not run -file reading error
-#python print_fires.py --country "United States of America" --country_column 0 --fires_column 4 --file_name "Agrofood_co2_eission.csv"
+set +e  #Continue on error
+python print_fires.py --country "United States of America" --country_column 0 --fires_column 4 --file_name "Agrofood_co2_eission.csv"
 
 #This does not run -error converting valie
-#python print_fires.py --country "United States of America" --country_column 0 --fires_column 0 --file_name "Agrofood_co2_emission.csv"
+python print_fires.py --country "United States of America" --country_column 0 --fires_column 0 --file_name "Agrofood_co2_emission.csv"
+set -e #Stop on error
