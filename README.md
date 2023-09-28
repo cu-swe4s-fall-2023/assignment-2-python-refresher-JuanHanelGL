@@ -41,4 +41,6 @@ Added exceptions in my_utils.py when converting data into an integer.
 
 Added comments to the files.
 
-Updated README.md with best practices in mind.
+Updated README.md with best practices in mind
+
+Changed my_utils.py and print_fires.py to have all exceptions take place within the main code.

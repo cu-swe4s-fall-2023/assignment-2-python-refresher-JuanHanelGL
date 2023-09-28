@@ -9,6 +9,12 @@ def count_fires(fires):
         total_fires += fires[i]
     return total_fires
 
+def change_to_int(array):
+    int_array = []
+    for i in range(len(array)):
+        new_int = float(array[i])
+        int_array.append(int(new_int))
+    return int_array
 
 def main():
     #Argparse helps handle input parameters, showing an error if a critical input is missing.
@@ -37,6 +43,8 @@ def main():
                        required=True)
     
     args = parser.parse_args()
+    new_int = 0.0
+    total_count = 0
     
     #The arguments used as inputs are then used in the script, they are renamed to ease their use.
     country = args.country
@@ -51,6 +59,9 @@ def main():
                            country_column, 
                            country, 
                            fires_column)
+        int_array = change_to_int(fires)
+        num_fires = count_fires(int_array)
+                                  
     except FileNotFoundError:
         print('Could not find ' + file_name)
         sys.exit(1)
@@ -59,13 +70,18 @@ def main():
     except PermissionError:
         print('Could not open ' + file_name)
         sys.exit(1)
+        
+    except ValueError:
+        print('Could not convert value to an integer')
+        sys.exit(1)
     
     
     #The count_fires function is used with the fires array as an argument.
-    num_fires = count_fires(fires)
+    #int_array = change_to_int(fires)
+    #num_fires = count_fires(int_array)
     
 
-    print("Fires array: ", fires)
+    print("Fires array: ", int_array)
     print("Sum of all fires in", country,": ", num_fires)
     
     
