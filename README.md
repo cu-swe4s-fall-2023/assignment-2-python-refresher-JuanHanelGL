@@ -44,3 +44,12 @@ Added comments to the files.
 Updated README.md with best practices in mind
 
 Changed my_utils.py and print_fires.py to have all exceptions take place within the main code.
+
+
+
+- Homework 4:
+
+Added calculate_mean, calculate_median and calculate_std_dev to the my_utils.py
+
+To use the functions, add the command line argument --operation 2,3, or 4. 
+2 for mean, 3 for median and 4 for standard deviation, any other number or no argument shows the sum of the array.
