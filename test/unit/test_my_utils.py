@@ -4,8 +4,8 @@ import unittest
 import random
 
 
-sys.path.append(os.path.abspath('../../src'))
 
+sys.path.insert(0, '../../src')
 
 from my_utils import get_column, calculate_mean, calculate_median, calculate_std_dev
 
