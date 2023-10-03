@@ -7,6 +7,11 @@
 
 * To use this file, you must download the Agrofood_co2_eission.csv file available in the following [link](https://drive.google.com/file/d/1Wytf3ryf9EtOwaloms8HEzLG0yjtRqxr/view?usp=drive_link)
 
+* To run the unit tests, you have to set up the enviroment variable for the my_utils file:
+write in the terminal: 
+# export MY_UTILS_PATH=path to the directory where you are storing my_utils.py
+
+
 
 The following is the workflow used in both assignments:
 
@@ -53,3 +58,6 @@ Added calculate_mean, calculate_median and calculate_std_dev to the my_utils.py
 
 To use the functions, add the command line argument --operation 2,3, or 4. 
 2 for mean, 3 for median and 4 for standard deviation, any other number or no argument shows the sum of the array.
+
+Added the test_my_utils.py unit test file. To run the tests, you must do the following:
+# Write in the terminal: export MY_UTILS_PATH=/.../...  ----> path to the directory where you are storing my_utils.py
