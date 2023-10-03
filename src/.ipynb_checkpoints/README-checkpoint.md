@@ -60,4 +60,4 @@ To use the functions, add the command line argument --operation 2,3, or 4.
 2 for mean, 3 for median and 4 for standard deviation, any other number or no argument shows the sum of the array.
 
 Added the test_my_utils.py unit test file. To run the tests, you must do the following:
-# Write in the terminal: export MY_UTILS_PATH=/.../...  ----> path to the directory where you are storing my_utils.py
+* write in the terminal: export MY_UTILS_PATH=path to the directory where you are storing my_utils.py *
