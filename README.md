@@ -59,5 +59,5 @@ Added calculate_mean, calculate_median and calculate_std_dev to the my_utils.py
 To use the functions, add the command line argument --operation 2,3, or 4. 
 2 for mean, 3 for median and 4 for standard deviation, any other number or no argument shows the sum of the array.
 
-Added the test_my_utils.py unit test file. To run the tests, you must do the following:
-# Write in the terminal: export MY_UTILS_PATH=/.../...  ----> path to the directory where you are storing my_utils.py
+Reverted to version 3.2, I had added the csv file and did not know how to remove it. There were also other unwanted files.
+Added unit test and directories.
