@@ -62,3 +62,5 @@ Added unit test and directories.
 Cleaned the repo up, removed .ipynb_checkpoints folders and added to .gitignore as best as I could.
 Added func test, first in python, but then removed it and added in bash. Functional test doesn't yet have a working code.
 Reverting to version 3.2 was not the best idea, it would have been better to remove the additional files/ directories, as I had to do it that way anyways.
+
+Added functionality to func test. It now tests mean, median, standard deviation and sum of the print_fires.py file.
