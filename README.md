@@ -58,3 +58,7 @@ To use the functions, add the command line argument --operation 2,3, or 4.
 
 Reverted to version 3.2, I had added the csv file and did not know how to remove it. There were also other unwanted files.
 Added unit test and directories.
+
+Cleaned the repo up, removed .ipynb_checkpoints folders and added to .gitignore as best as I could.
+Added func test, first in python, but then removed it and added in bash. Functional test doesn't yet have a working code.
+Reverting to version 3.2 was not the best idea, it would have been better to remove the additional files/ directories, as I had to do it that way anyways.
