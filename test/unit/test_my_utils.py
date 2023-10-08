@@ -3,13 +3,19 @@ import random
 import sys
 import unittest
 
-sys.path.insert(0, '../../src')
-
-from my_utils import (
-    get_column,
-    calculate_mean,
-    calculate_median,
-    calculate_std_dev)
+try:
+    from my_utils import (
+        get_column,
+        calculate_mean,
+        calculate_median,
+        calculate_std_dev)
+except ImportError:
+    sys.path.insert(0, '../../src')
+    from my_utils import (
+        get_column,
+        calculate_mean,
+        calculate_median,
+        calculate_std_dev)
 
 class TestMyUtils(unittest.TestCase):
 
