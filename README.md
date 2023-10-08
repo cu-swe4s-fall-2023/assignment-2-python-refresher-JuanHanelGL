@@ -10,6 +10,8 @@
 
 **To run the main program files, switch directory to src. To run tests, switch directory to test/func or test/unit to run unit and functional tests.
 
+**To run the test of this file, you must have pycodestyle installed.
+
 
 
 
