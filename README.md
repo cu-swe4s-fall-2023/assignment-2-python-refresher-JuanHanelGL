@@ -79,3 +79,4 @@ Fixed identation in yml script.
 Changed style errors in print_fires.py and my_utils.py files.
 Changed other style errors in print_fires.py and in test_my_utils.py.
 Changed more other style errors in print_fires.py and in test_my_utils.py, also changed the order of two lines in test_print_fires to ensure it runs.
+Unit and func tests jobs are completed, style_check still doesn't complete, changed test_my_utils to try to fix that.

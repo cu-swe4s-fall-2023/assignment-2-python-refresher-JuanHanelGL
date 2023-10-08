@@ -1,7 +1,7 @@
-import sys
 import os
-import unittest
 import random
+import sys
+import unittest
 
 sys.path.insert(0, '../../src')
 
