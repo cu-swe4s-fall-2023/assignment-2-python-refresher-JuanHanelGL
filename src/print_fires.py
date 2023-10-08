@@ -1,4 +1,4 @@
-from my_utils import(
+from my_utils import (
     get_column,
     calculate_mean,
     calculate_median,
@@ -42,7 +42,7 @@ def main():
     # Argparse helps handle input parameters,
     # showing an error if a critical input is missing.
     parser = argparse.ArgumentParser(
-                descriptio='Use with CSV file.',
+                description='Use with CSV file.',
                 prog='print_fires.py')
 
     parser.add_argument('--country',
