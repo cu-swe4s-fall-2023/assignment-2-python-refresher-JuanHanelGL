@@ -1,12 +1,12 @@
-from my_utils import get_column,
-                     calculate_mean,
-                     calculate_median,
-                     calculate_std_dev
+from my_utils import(get_column,
+                        calculate_mean,
+                        calculate_median,
+                        calculate_std_dev)
 import argparse
 import sys
 
 
-# This function makes a total count  in 
+# This function makes a total count  in
 # the total_fires variable of the elements in the fires array.
 def count_fires(fires):
     total_fires = 0
@@ -23,9 +23,9 @@ def change_to_int(array):
     return int_array
 
 
-# This ensures that if there is no value given for operation, 
+# This ensures that if there is no value given for operation,
 # the code still runs, as it is given a default value.
-def do_operation(operation = 1):
+def do_operation(operation=1):
     state = 1
     if operation == 2:
         state = 2
@@ -38,17 +38,17 @@ def do_operation(operation = 1):
 
 def main():
     operation_type = 'Sum'
-    # Argparse helps handle input parameters, 
+    # Argparse helps handle input parameters,
     # showing an error if a critical input is missing.
     parser = argparse.ArgumentParser(
-                                     descriptio = 'Use this program to survey data from a CSV file.',
-                                     prog = 'print_fires.py')
-    
+                                     descriptio='Use with CSV file.',
+                                     prog='print_fires.py')
+
     parser.add_argument('--country',
                         type=str,
                         help='Country of interest',
                         required=True)
-    
+
     parser.add_argument('--country_column',
                         type=int,
                         help='Column corresponding to the country',
@@ -72,26 +72,26 @@ def main():
     args = parser.parse_args()
     new_int = 0.0
     total_count = 0
-    
-    # The arguments used as inputs are then used in the script, 
+
+    # The arguments used as inputs are then used in the script,
     # they are renamed to ease their use.
     country = args.country
     country_column = args.country_column
     fires_column = args.fires_column
     file_name = args.file_name
     operation = args.operation
-    
-    # An exception is made in case the file can't be read due 
+
+    # An exception is made in case the file can't be read due
     # to file or permission errors.
 
-    try:    
+    try:
         fires = get_column(file_name,
                            country_column,
                            country,
                            fires_column)
         int_array = change_to_int(fires)
         num_fires = count_fires(int_array)
-                                  
+
     except FileNotFoundError:
         print('Could not find ' + file_name)
         sys.exit(1)
@@ -125,4 +125,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
