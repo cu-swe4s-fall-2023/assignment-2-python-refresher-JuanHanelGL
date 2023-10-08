@@ -41,6 +41,7 @@ jobs:
           python -m unittest test_utils
           cd ../func
           bash test_print_fires.sh
+      - run: |
           cd ../../src
           pycodestyle print_fires.py
 

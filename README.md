@@ -76,3 +76,4 @@ Added functionality to func test. It now tests mean, median, standard deviation 
 Added unit_test.yml to run continuous integration tests. Added test for unit tests, functional tests and style checks. 
 Added lines to install pycodestyle before running the style check.
 Fixed identation in yml script.
+Changed style errors in print_fires.py and my_utils.py files.
