@@ -3,7 +3,7 @@
 
 # Python Refresher Assignments 2 and 3
 ## The following shows assignments 2 and 3 for SWE4S. 
-**This script takes a CSV file and displays data of interest. In this specific case, a column in the CSV file contains the number of fires during a period of time. Another column specifies the country this took place in. By using this script, you can display each fire that took place in a country of interest, as well as the total number of fires during the period of time that encapsulates the CSV file.**
+**This script takes a CSV file and displays data of interest. In this specific case, a column in the CSV file contains the number of fires during a period of time. Another column specifies the country this took place in. By using this script, you can display each fire that took place in a country of interest, as well as the total number of fires during the period of time that encapsulates the CSV file.
 
 * To use this file, you must download the Agrofood_co2_eission.csv file available in the following [link] (https://drive.google.com/file/d/1Wytf3ryf9EtOwaloms8HEzLG0yjtRqxr/view?usp=drive_link) and put it in the src directory.
 
@@ -67,3 +67,8 @@ Added func test, first in python, but then removed it and added in bash. Functio
 Reverting to version 3.2 was not the best idea, it would have been better to remove the additional files/ directories, as I had to do it that way anyways.
 
 Added functionality to func test. It now tests mean, median, standard deviation and sum of the print_fires.py file.
+
+
+- Homework 5:
+
+Added unit_test.yml to run continuous integration tests. Added test for unit tests, functional tests and style checks.
