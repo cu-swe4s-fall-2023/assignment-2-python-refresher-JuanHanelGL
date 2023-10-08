@@ -77,4 +77,5 @@ Added unit_test.yml to run continuous integration tests. Added test for unit tes
 Added lines to install pycodestyle before running the style check.
 Fixed identation in yml script.
 Changed style errors in print_fires.py and my_utils.py files.
-Changed other tyle errors in print_fires.py and in test_my_utils.py.
+Changed other style errors in print_fires.py and in test_my_utils.py.
+Changed more other style errors in print_fires.py and in test_my_utils.py, also changed the order of two lines in test_print_fires to ensure it runs.

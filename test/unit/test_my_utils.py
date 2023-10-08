@@ -1,13 +1,13 @@
-from my_utils import (get_column,
-                        calculate_mean,
-                        calculate_median,
-                        calculate_std_dev)
+sys.path.insert(0, '../../src')
+from my_utils import (
+    get_column,
+    calculate_mean,
+    calculate_median,
+    calculate_std_dev)
 import sys
 import os
 import unittest
 import random
-
-sys.path.insert(0, '../../src')
 
 
 class TestMyUtils(unittest.TestCase):
@@ -39,6 +39,6 @@ class TestMyUtils(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             calculate_std_dev([])
 
-            
+
 if __name__ == '__main__':
     unittest.main()
