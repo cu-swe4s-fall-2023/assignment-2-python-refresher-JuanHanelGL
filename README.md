@@ -73,4 +73,5 @@ Added functionality to func test. It now tests mean, median, standard deviation 
 
 - Homework 5:
 
-Added unit_test.yml to run continuous integration tests. Added test for unit tests, functional tests and style checks.
+Added unit_test.yml to run continuous integration tests. Added test for unit tests, functional tests and style checks. 
+Added lines to install pycodestyle before running the style check. 

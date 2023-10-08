@@ -25,6 +25,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      run: |
+        python -m pip install --upgrade pip
+        pip install pycodestyle
+      - name: Style check
+      run: |
+        pycodestyle .
         run: |
           pycodestyle .
           
@@ -37,6 +43,6 @@ jobs:
           python -m unittest test_utils
           cd ../func
           bash test_print_fires.sh
-          cd
+          cd ../../src
           pycodestyle print_fires.py
           
