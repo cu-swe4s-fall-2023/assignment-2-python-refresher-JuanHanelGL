@@ -17,6 +17,7 @@ except ImportError:
         calculate_median,
         calculate_std_dev)
 
+
 class TestMyUtils(unittest.TestCase):
 
     def test_calculate_mean(self):
