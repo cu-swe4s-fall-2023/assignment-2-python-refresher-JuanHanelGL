@@ -74,11 +74,21 @@ Added functionality to func test. It now tests mean, median, standard deviation 
 - Homework 5:
 
 Added unit_test.yml to run continuous integration tests. Added test for unit tests, functional tests and style checks. 
+
 Added lines to install pycodestyle before running the style check.
+
 Fixed identation in yml script.
+
 Changed style errors in print_fires.py and my_utils.py files.
+
 Changed other style errors in print_fires.py and in test_my_utils.py.
+
 Changed more other style errors in print_fires.py and in test_my_utils.py, also changed the order of two lines in test_print_fires to ensure it runs.
+
 Unit and func tests jobs are completed, style_check still doesn't complete, changed test_my_utils to try to fix that.
+
 Changed test_my_utils.py, tried an except block to add the path of my_utils.py after importing the file.
+
 Changed test_my_utils.py, it had a E302 error when running pycodestyle.
+
+Removed run_all_tests test from yml file.
