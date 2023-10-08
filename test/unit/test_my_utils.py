@@ -1,18 +1,25 @@
-import sys
 import os
-import unittest
 import random
+import sys
+import unittest
 
+try:
+    from my_utils import (
+        get_column,
+        calculate_mean,
+        calculate_median,
+        calculate_std_dev)
+except ImportError:
+    sys.path.insert(0, '../../src')
+    from my_utils import (
+        get_column,
+        calculate_mean,
+        calculate_median,
+        calculate_std_dev)
 
-
-sys.path.insert(0, '../../src')
-
-from my_utils import get_column, calculate_mean, calculate_median, calculate_std_dev
 
 class TestMyUtils(unittest.TestCase):
 
-    #def test_get_column(self):
-    
     def test_calculate_mean(self):
         array = [random.randint(1, 100) for _ in range(100)]
         expected_mean = sum(array) / len(array)
@@ -33,11 +40,13 @@ class TestMyUtils(unittest.TestCase):
     def test_calculate_std_dev(self):
         array = [random.randint(1, 100) for _ in range(100)]
         mean = sum(array) / len(array)
-        expected_std_dev = (sum((x - mean) ** 2 for x in array) / len(array)) ** 0.5
+        expected_std_dev = (sum((x - mean) ** 2 for x in array)
+                            / len(array)) ** 0.5
         self.assertAlmostEqual(calculate_std_dev(array), expected_std_dev)
 
         with self.assertRaises(ZeroDivisionError):
             calculate_std_dev([])
+
 
 if __name__ == '__main__':
     unittest.main()

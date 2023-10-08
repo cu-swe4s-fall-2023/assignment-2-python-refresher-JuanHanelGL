@@ -1,11 +1,11 @@
-def get_column(file_name, 
-               query_column, 
-               query_value, 
+def get_column(file_name,
+               query_column,
+               query_value,
                result_column=1):
-    
+
     result = []
-    
-    with open(file_name,'r') as f:
+
+    with open(file_name, 'r') as f:
         for line in f:
             items = line.strip().split(',')
             if items[query_column] == query_value:
@@ -26,7 +26,7 @@ def calculate_median(array):
     else:
         return array[length // 2]
 
-    
+
 def calculate_std_dev(array):
     mean = sum(array) / len(array)
     variance = sum((x - mean) ** 2 for x in array) / len(array)
