@@ -92,3 +92,5 @@ Changed test_my_utils.py, tried an except block to add the path of my_utils.py a
 Changed test_my_utils.py, it had a E302 error when running pycodestyle.
 
 Removed run_all_tests test from yml file.
+
+Added environment.yml and modified unit_test.yml to use an environment instead of installing pycodestyle.
