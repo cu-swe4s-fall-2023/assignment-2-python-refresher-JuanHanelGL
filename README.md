@@ -96,3 +96,5 @@ Removed run_all_tests test from yml file.
 Added environment.yml and modified unit_test.yml to use an environment instead of installing pycodestyle.
 
 Re-added run_all tests test to unit_test.yml.
+
+Changed std dev to an int so run_all_tests and func test give the same result.
