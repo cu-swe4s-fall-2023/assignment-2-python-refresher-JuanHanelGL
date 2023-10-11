@@ -26,13 +26,13 @@ jobs:
   style_check:
     defaults:
       run:
-      shell: bash -el {0}
+        shell: bash -el {0}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: conda-incubator/setup-miniconda@v2
         with:
-        environment-file: environment.yml
+          environment-file: environment.yml
+          activate-environment: swe4s
       - run: |
           pycodestyle .
-          
