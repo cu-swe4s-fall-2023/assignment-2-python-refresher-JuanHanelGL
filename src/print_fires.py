@@ -117,7 +117,7 @@ def main():
         result_array = calculate_median(int_array)
         operation_type = 'Median'
     elif state == 4:
-        result_array = calculate_std_dev(int_array)
+        result_array = int(calculate_std_dev(int_array))
         operation_type = 'Standard deviation'
 
     print("Fires array: ", int_array)
