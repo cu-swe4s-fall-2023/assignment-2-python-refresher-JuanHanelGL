@@ -98,3 +98,5 @@ Added environment.yml and modified unit_test.yml to use an environment instead o
 Re-added run_all tests test to unit_test.yml.
 
 Changed std dev to an int so run_all_tests and func test give the same result.
+
+Changed miniconda to micromamba in style_check test in unit_test.yml file to make the execution of the test faster.
