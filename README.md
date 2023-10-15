@@ -15,6 +15,16 @@
 
 
 
+**With this file, you can also analyze the food consumption trends in households in different countries. Default countries are the United States of America, Mexico, Canada and Japan. To change the countries, modify countries.txt inside the src folder. To run that functionality, move to the src directory and run snakemake by writing the following in the terminal:
+
+# @_snakemake -c {x}@_ where {x} is the number of cores you want to use to run the script.
+
+**Be aware that running snakemake automatically downloads the Agrofood_co2_emission.csv file. 
+
+
+
+
+
 The following is the workflow used in both assignments:
 
 
@@ -100,3 +110,16 @@ Re-added run_all tests test to unit_test.yml.
 Changed std dev to an int so run_all_tests and func test give the same result.
 
 Changed miniconda to micromamba in style_check test in unit_test.yml file to make the execution of the test faster.
+
+
+- Homework 6:
+
+Added snakefile, hist.py, get_data.py, and countries.txt, moved them to src folder.
+
+Changed get_data so that it retrieves data relating to food consumption per household from Agrofood_co2_emission.csv file.
+
+Changed hist.py to make a plot instead of a histogram, showing the year as the x axis and the quantity of food consumption as the y axis. This graph shows how food consumption has changed in a country between 1990 and 2020. The countries.txt currently has United States of America, Mexico, Canada and Japan. Each plot shows the different rates of food consumption in the countries.
+
+Added funtional tests for hist.py and get_data.py.
+
+Changed yml test to incorporate new func tests.
