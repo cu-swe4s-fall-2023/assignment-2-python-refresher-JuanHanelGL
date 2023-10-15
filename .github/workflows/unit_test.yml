@@ -15,13 +15,30 @@ jobs:
           cd test/unit
           python -m unittest test_my_utils
 
-  run_func_tests:
+  run_print_fires_func_tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: |
           cd test/func
           bash test_print_fires.sh
+        
+  run_hist_func_test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: environment.yml
+          activate-environment: swe4s
+      - run: |
+          cd test/func
+          bash test_get_data.sh
+          bash test_hist.sh
+
 
   style_check:
     runs-on: ubuntu-latest
@@ -54,4 +71,6 @@ jobs:
           python -m unittest test_my_utils
           cd ../func
           bash test_print_fires.sh
+          bash test_get_data.sh
+          bash test_hist.sh
           pycodestyle .
