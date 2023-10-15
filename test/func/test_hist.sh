@@ -5,7 +5,7 @@ test -e ssshtest || wget -q https://raw.githubusercontent.com/ryanlayer/ssshtest
 script_path="../../src/hist.py"
 
 if [ -f "Afghanistan.png" ]; then
-    rm Afghanistan.jpg
+    rm Afghanistan.png
 fi
 
 run get_data_test python $script_path --file_name "Afghanistan.txt" --out_file "Afghanistan.png" --title "Food Data" --x "Food_household_consumption" --y "Year"
