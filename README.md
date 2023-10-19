@@ -23,8 +23,11 @@
 
 This is the data you obtain by running the snakefile:
 ![Canada Food](doc/Canada.png?raw=true "Canada Food Consumption")
+This graph shows an upwards trend in food consumption in Canada for the first ten years, which could be related to an increase in population. Then the trend changes, which could again indicate an important decrease in population, as the food consumption in year 30 is even lower than in year 0.
 ![Mexico Food](doc/Mexico.png?raw=true "Mexico Food Consumption")
+Mexico follows a similar trend to Canada, but it takes place over a longer period of time. The data plateaus during most of the recorded years, meaning that population remains steady, but shows a downwards trend toward the end of the graph. It has to be said that even if the trend shows a decrease, it is still an increase when comparing year 0 to year 30.
 ![Japan Food](doc/Japan.png?raw=true "Japan Food Consumption")
+Japan follows a different trend, as food consumption has seen an upwards trend. There have been some dips in the data, which could indicate population fluctuation, but it maintains an overall trend.
 
 
 
