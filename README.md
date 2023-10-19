@@ -28,6 +28,7 @@ This is the data you obtain by running the snakefile:
 ![USA Food](doc/United%States%of%America.png?raw=true "US Food Consumption")
 
 
+
 The following is the workflow used in both assignments:
 
 
