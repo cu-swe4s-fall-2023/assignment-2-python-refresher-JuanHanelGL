@@ -25,7 +25,7 @@ This is the data you obtain by running the snakefile:
 ![Canada Food](doc/Canada.png?raw=true "Canada Food Consumption")
 ![Mexico Food](doc/Mexico.png?raw=true "Mexico Food Consumption")
 ![Japan Food](doc/Japan.png?raw=true "Japan Food Consumption")
-![United States of America Food](doc/'United States of America.png'?raw=true "US Food Consumption")
+![USA Food](doc/United%States%of%America.png?raw=true "US Food Consumption")
 
 
 The following is the workflow used in both assignments:
