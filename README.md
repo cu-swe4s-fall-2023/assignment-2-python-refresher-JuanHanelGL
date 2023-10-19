@@ -15,7 +15,7 @@
 
 
 
-**With this file, you can also analyze the food consumption trends in households in different countries. Default countries are the United States of America, Mexico, Canada and Japan. To change the countries, modify countries.txt inside the src folder. To run that functionality, move to the src directory and run snakemake by writing the following in the terminal:
+**With this file, you can also analyze the food consumption trends in households in different countries. Default countries are Mexico, Canada and Japan. To change the countries, modify countries.txt inside the src folder. To run that functionality, move to the src directory and run snakemake by writing the following in the terminal:
 
 # @_snakemake -c {x}_ where {x} is the number of cores you want to use to run the script.
 
@@ -25,7 +25,6 @@ This is the data you obtain by running the snakefile:
 ![Canada Food](doc/Canada.png?raw=true "Canada Food Consumption")
 ![Mexico Food](doc/Mexico.png?raw=true "Mexico Food Consumption")
 ![Japan Food](doc/Japan.png?raw=true "Japan Food Consumption")
-![USA Food](doc/United%States%of%America.png?raw=true "US Food Consumption")
 
 
 
