@@ -29,6 +29,7 @@ This is the data you obtain by running the snakefile:
 
 
 
+
 The following is the workflow used in both assignments:
 
 
