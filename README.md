@@ -3,26 +3,29 @@
 
 # Python Refresher Assignments 2 and 3
 ## The following shows assignments 2 and 3 for SWE4S. 
-**This script takes a CSV file and displays data of interest. In this specific case, a column in the CSV file contains the number of fires during a period of time. Another column specifies the country this took place in. By using this script, you can display each fire that took place in a country of interest, as well as the total number of fires during the period of time that encapsulates the CSV file.
+** This script takes a CSV file and displays data of interest. In this specific case, a column in the CSV file contains the number of fires during a period of time. Another column specifies the country this took place in. By using this script, you can display each fire that took place in a country of interest, as well as the total number of fires during the period of time that encapsulates the CSV file.
 
-* To use this file, you must download the Agrofood_co2_eission.csv file available in the following [link] (https://drive.google.com/file/d/1Wytf3ryf9EtOwaloms8HEzLG0yjtRqxr/view?usp=drive_link) and put it in the src directory.
+* To use this file, you must download the Agrofood_co2_eission.csv file available in the following [link](https://drive.google.com/file/d/1Wytf3ryf9EtOwaloms8HEzLG0yjtRqxr/view?usp=drive_link) and put it in the src directory.
 
 
-**To run the main program files, switch directory to src. To run tests, switch directory to test/func or test/unit to run unit and functional tests.
+** To run the main program files, switch directory to src. To run tests, switch directory to test/func or test/unit to run unit and functional tests.
 
-**To run the test of this file, you must have pycodestyle installed.
+* To run the test of this file, you must have pycodestyle installed.
 
 
 
 
 **With this file, you can also analyze the food consumption trends in households in different countries. Default countries are the United States of America, Mexico, Canada and Japan. To change the countries, modify countries.txt inside the src folder. To run that functionality, move to the src directory and run snakemake by writing the following in the terminal:
 
-# @_snakemake -c {x}@_ where {x} is the number of cores you want to use to run the script.
+# @_snakemake -c {x}_ where {x} is the number of cores you want to use to run the script.
 
-**Be aware that running snakemake automatically downloads the Agrofood_co2_emission.csv file. 
+** Be aware that running snakemake automatically downloads the Agrofood_co2_emission.csv file. 
 
-
-
+This is the data you obtain by running the snakefile:
+![Canada Food](doc/Canada.png?raw=true "Canada Food Consumption")
+![Mexico Food](doc/Mexico.png?raw=true "Mexico Food Consumption")
+![Japan Food](doc/Japan.png?raw=true "Japan Food Consumption")
+![United States of America Food](doc/'United States of America'.png?raw=true "US Food Consumption")
 
 
 The following is the workflow used in both assignments:
